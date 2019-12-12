@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
 	async function loadplotdata(variable, depth_to_plot, year) {
 
 
-		const quraw = await d3.csv("/qu39_ctd.csv", d3.autoType);
+		const quraw = await d3.csv("qu39_ctd.csv", d3.autoType);
 
 		const dataClean = quraw.filter(d => d["avg_" + "temp" + "_" + depth_to_plot] > 1 && d["min_" +
 			"temp" + "_" + depth_to_plot] !== -9.99e-29)

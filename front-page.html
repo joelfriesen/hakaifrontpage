@@ -1,0 +1,76 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <script
+			  src="https://code.jquery.com/jquery-1.12.4.min.js"
+			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			  crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3-array.v2.min.js"></script>
+  <script src="js/chartsettings.js"></script>
+  <link rel="stylesheet" href="js/chart.css?v=1.0">
+
+</head>
+
+<body>
+  
+<div class="charts main container col4 nomobile">
+        <hr class="col span4" />
+        <h3 class="col span4">The latest data from the Hakai Sensor Network</h3>
+        <div class="chart1 col span3">
+          <h4 class="STemperature other-tab-title current">Monthly Average Water Temperature, Kwakshua Channel (&deg;C) at surface</h4>
+          <h4 class="DTemperature other-tab-title">Monthly Average Water Temperature, Kwakshua Channel (&deg;C) below 150 m</h4>
+          <h4 class="SSalinity other-tab-title">Monthly Average Salinity, Kwakshua Channel (Salinity Units) at surface</h4>
+          <h4 class="DSalinity other-tab-title">Monthly Average Salinity, Kwakshua Channel (Salinity Units) below 150 m</h4>
+          <h4 class="SOxygen other-tab-title">Monthly Average Oxygen, Kwakshua Channel (mL/L) at surface</h4>
+          <h4 class="DOxygen other-tab-title">Monthly Average Oxygen, Kwakshua Channel (mL/L) below 150 m</h4>
+          <div id="chart"></div>
+        </div>
+        <div class="chartbuttons col">
+           <ul class="othertabs">
+              <li class="col tab-link current" data-tab="STemperature"><label><input type="radio" class="type" name="type" value="temp" checked>Temperature</input></label>
+                <div class="subbuttons">
+                  <label class="depths"><input type="radio" class="depths" name="depths" value=5 checked>top 5 m</input></label>
+                  <label class="depths"><input type="radio" class="depths" name="depths" value=150>145 - 150 m</input></label>
+                </div>
+                <div class="subbuttons">
+                  <label class="years"><input type="radio" class="years" name="years" value=2019 checked>2019</input></label>
+                  <label class="years"><input type="radio" class="years" name="years" value=2018>2018</input></label>
+                  <label class="years"><input type="radio" class="years" name="years" value=2017>2017</input></label>
+                  <label class="years"><input type="radio" class="years" name="years" value=2016>2016</input></label>
+                </div>
+              </li>
+              <li class="col tab-link" data-tab="SSalinity" ><label><input type="radio" class="type" name="type" value="sal">Salinity</input></label>
+              <div class="subbuttons">
+                  <label class="depths"><input type="radio" class="depths" name="depths" value=5>top 5 m</input></label>
+                  <label class="depths"><input type="radio" class="depths" name="depths" value=150>145 - 150 m</input></label>
+                </div>
+                <div class="subbuttons">
+                  <label class="years"><input type="radio" class="years" name="years" value=2019>2019</input></label>
+                  <label class="years"><input type="radio" class="years" name="years" value=2018>2018</input></label>
+                  <label class="years"><input type="radio" class="years" name="years" value=2017>2017</input></label>
+                  <label class="years"><input type="radio" class="years" name="years" value=2016>2016</input></label>
+                </div>
+              </li>
+              <li class="col tab-link" data-tab="SOxygen"  ><label><input type="radio" class="type" name="type" value="oxy">Dissolved Oxygen</input></label>
+              <div class="subbuttons">
+                  <label class="depths"><input type="radio" class="depths" name="depths" value=5>top 5 m</input></label>
+                  <label class="depths"><input type="radio" class="depths" name="depths" value=150>145 - 150 m</input></label>
+                </div>
+                <div class="subbuttons">
+                  <label class="years"><input type="radio" class="years" name="years" value=2019>2019</input></label>
+                  <label class="years"><input type="radio" class="years" name="years" value=2018>2018</input></label>
+                  <label class="years"><input type="radio" class="years" name="years" value=2017>2017</input></label>
+                  <label class="years"><input type="radio" class="years" name="years" value=2016>2016</input></label>
+                </div>
+              </li>
+          </ul>
+          <ul class="thirdtab"><li class="col  smalllineheight ">Looking for more details? <br /><a href="http://data.hakai.org/">Visit the data repository</a></li></ul>
+        </div>
+</body>
+</html>
+
+
