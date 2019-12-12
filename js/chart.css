@@ -21,12 +21,27 @@
 .xaxis {
     fill: white;
 }
-.othertabs label{
-	display: block;
-	width: 100%;
+
+.othertabs label {
+    display: block;
+    width: 100%;
 }
 
-.othertabs input{
-	display: none;
+.othertabs input {
+    display: none;
 }
 
+.subbuttons label.depths {
+    background:#ddd;
+    width: 40%;
+    float: left;
+    margin: 5%;
+    color: #000;
+}
+.subbuttons label.years {
+    background:#ddd;
+    width: 20%;
+    float: left;
+    margin: 5%;
+    color: #000;
+}

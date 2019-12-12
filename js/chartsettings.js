@@ -313,8 +313,6 @@ jQuery(document).ready(function($) {
 
 		$('.othertabs li').click(function() {
 			var source = $(this).data("tab");
-			
-
 			$('#chart-title').html(source);
 
 			var othertab_id = $(this).attr('data-tab');
